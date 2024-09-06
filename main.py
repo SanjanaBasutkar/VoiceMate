@@ -22,7 +22,7 @@ def speak(text):
 
 # Function to fetch top news headlines
 def get_top_headlines():
-    api_key = '9f312b29364142dcb4d886cae7678cb3'  # Replace with your actual NewsAPI key
+    api_key = '*API_Key*'  # Replace with your actual NewsAPI key
     url = f"https://newsapi.org/v2/top-headlines?country=us&apiKey={api_key}"
     response = requests.get(url)
     
@@ -41,7 +41,7 @@ def get_top_headlines():
 
 # Function to get weather information
 def get_weather(city):
-    api_key = '21707299c7af8a1bf5dbe59f417bbb96'  # Replace with your OpenWeatherMap API key
+    api_key = '*ApiKey*'  # Replace with your OpenWeatherMap API key
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
     response = requests.get(url)
     weather_data = response.json()
